@@ -347,7 +347,6 @@ body {
   text-align: center;
 }
 .skill-card {
-
     text-align: center; 
 }
 
@@ -360,7 +359,96 @@ body {
     line-height: 1.3;
 }
 #habilidades #sql {
-
     width: 95%; 
-    
 }
+
+
+
+.section-title {
+  color: var(--primary-color);
+  font-weight: 500;
+  margin-bottom: 50px;
+  text-align: left;
+  font-size: var(--fs-title2);
+  text-shadow: 0 0 5px #00ff99;
+}
+
+/* Tarjeta base */
+.project-card {
+  position: relative;
+  background-color: #101e2a;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  height: 100%;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+/* Tamaños */
+.project-card.big img {
+  height: 420px;
+  object-fit: cover;
+}
+
+.project-card.small img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(0, 255, 153, 0.4);
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Etiquetas */
+.tech-tags {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  gap: 8px;
+}
+
+.tech-tags span {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #00ff99;
+  color: #00ff99;
+  font-size: 0.8rem;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+/* Texto */
+.project-card h5 {
+  margin-top: 10px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.project-card p {
+  color: #9bd5c0;
+  font-size: 0.9rem;
+}
+
+/* Enlace final */
+.more-projects {
+  color: #00ff99;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s;
+}
+
+.more-projects:hover {
+  border-bottom: 1px solid #00ff99;
+}
+
